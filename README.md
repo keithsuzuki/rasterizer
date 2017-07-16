@@ -7,7 +7,8 @@ Docker build for running R rasterizer
 ## 使い方
 １．GithubからCloneして、Dockerfileを取得
 ```
-git clone https://github.com/keithsuzuki/rasterizer.git
+$ git clone https://github.com/keithsuzuki/rasterizer.git
+$ git checkout develop
 ```
 
 ２．スクリプト起動（Docker build, Docker run)
