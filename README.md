@@ -6,7 +6,7 @@ Docker build for running R rasterizer
 - Docker quickstart terminal
 ## 使い方
 ### １．GithubからCloneして、Dockerfileを取得
-- Windows7にDocker Toolboxをインストールする。
+- Windows7に[Docker Toolbox](https://www.docker.com/products/docker-toolbox)をインストールする。
 - Docker quickstart terminalを開き、下記を実施。
 ```
 $ cd /c/devel		// c:\devel などの適当なフォルダに移動
