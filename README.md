@@ -5,32 +5,29 @@ Docker build for running R rasterizer
 - [Docker Toolbox](https://www.docker.com/products/docker-toolbox)
 - Docker quickstart terminal
 ## 使い方
-１．GithubからCloneして、Dockerfileを取得
+#### １．GithubからCloneして、Dockerfileを取得
 ```
 $ git clone https://github.com/keithsuzuki/rasterizer.git
 $ git checkout develop
 ```
 
-２．コンテナを作成してPCLをバックグラウンドで走らせる
+#### ２．コンテナを作成してPCLをバックグラウンドで走らせる
 ```
 $ ./buildpcl.sh
 ```
 
-３．プリントしたファイルをコンテナに送り、ラスタライズする
+#### ３．プリントしたいファイル（```target.pcl```として保存しておく）をコンテナに送り、ラスタライズする
 ```
-$ ./submitprintfile
+$ ./submitprintfile.sh
 ```
-※プリントしたいファイルは```target.pcl```として保存すること。
 
-４．ラスタライズされたファイルを受け取る
+#### ４．ラスタライズされたファイルを受け取る（結果は、```output```フォルダに入ってくる）
 ```
-$ ./getprintresult
+$ ./getprintresult.sh
 ```
-※結果は、outputフォルダに入ってくる。
+#### 以降は、３と４を繰り返す。
 
-以降は、３と４を繰り返す。
-
-５．クリーンアップ
+#### ５．クリーンアップ
 ```
 $ ./cleanup.sh
 ```
