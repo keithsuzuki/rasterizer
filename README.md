@@ -21,3 +21,8 @@ $ ./buildpcl.sh
 # cd /home/pr/pcl/AutoTest
 # ./pcl
 ```
+
+４．クリーンアップ
+```
+$ ./cleanup.sh
+```
