@@ -24,10 +24,13 @@ RUN  yum -y install unzip
 # =============================================================================
 # add project files
 RUN  mkdir /home/pr
-ADD  ./pcl.zip /home/pr/pcl.zip
+ADD  container/pcl.zip /home/pr/pcl.zip
+ADD  container/startpcl.sh /tmp/startpcl.sh
+ADD  container/submitpcl.sh /tmp/submitpcl.sh
 RUN  cd /home/pr \
   && unzip pcl.zip \
   && rm pcl.zip \
   && chmod -R 744 pcl
 
 # =============================================================================
+CMD  /tmp/startpcl.sh

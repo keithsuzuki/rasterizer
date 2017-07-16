@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo -e "\n### remove container ###"
+docker stop pcl
 docker rm pcl
 
 echo -e "\n### remove image ###"

@@ -11,18 +11,26 @@ $ git clone https://github.com/keithsuzuki/rasterizer.git
 $ git checkout develop
 ```
 
-２．スクリプト起動（Docker build, Docker run)
+２．コンテナを作成してPCLをバックグラウンドで走らせる
 ```
 $ ./buildpcl.sh
 ```
 
-３．ラスタライザー起動
+３．プリントしたファイルをコンテナに送り、ラスタライズする
 ```
-# cd /home/pr/pcl/AutoTest
-# ./pcl
+$ ./submitprintfile
 ```
+※プリントしたいファイルは```target.pcl```として保存すること。
 
-４．クリーンアップ
+４．ラスタライズされたファイルを受け取る
+```
+$ ./getprintresult
+```
+※結果は、outputフォルダに入ってくる。
+
+以降は、３と４を繰り返す。
+
+５．クリーンアップ
 ```
 $ ./cleanup.sh
 ```
