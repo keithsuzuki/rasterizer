@@ -12,7 +12,7 @@ git clone https://github.com/keithsuzuki/rasterizer.git
 
 ２．スクリプト起動（Docker build, Docker run)
 ```
-$ ./startpcl.sh
+$ ./buildpcl.sh
 ```
 
 ３．ラスタライザー起動
