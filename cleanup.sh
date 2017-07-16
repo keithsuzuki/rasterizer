@@ -4,7 +4,7 @@ echo -e "\n### remove container ###"
 docker rm pcl
 
 echo -e "\n### remove image ###"
-docker rmi rasterizer
+docker rmi keithsuzuki/rasterizer
 
 echo -e "\n### docker ps -a ###"
 docker ps -a
