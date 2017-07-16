@@ -2,7 +2,8 @@
 Docker build for running R rasterizer
 ## 使用環境
 - Windows7
-- Docker Toolbox
+- [Docker Toolbox](https://www.docker.com/products/docker-toolbox)
+- Docker quickstart terminal
 ## 使い方
 １．GithubからCloneして、Dockerfileを取得
 ```
