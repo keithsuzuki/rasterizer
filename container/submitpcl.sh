@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # ラスタライザーの場所へ移動する。
 cd /home/pr/pcl/AutoTest
 
