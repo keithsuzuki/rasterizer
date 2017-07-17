@@ -1,5 +1,10 @@
 #!/bin/bash
 
-# 結果を戻す
-rm output/*
+# outputフォルダを削除する → 削除しなくても上書きされるので行わない
+#dir=output
+#if [ -e $dir ]; then
+#rm output/*
+#fi
+
+# 結果をコンテナからコピーする。
 docker cp pcl:/home/pr/pcl/AutoTest/output .
