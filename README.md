@@ -10,7 +10,7 @@ Docker build for running R rasterizer
 - Docker quickstart terminalを開き、下記を実施。
 ```
 $ cd /c/devel		// c:\devel などの適当なフォルダに移動
-$ git clone https://github.com/keithsuzuki/rasterizer.git
+$ git clone -c core.autocrlf=false https://github.com/keithsuzuki/rasterizer.git
 $ cd rasterizer
 $ git checkout develop
 ```
