@@ -11,6 +11,7 @@ FROM centos:centos6.9
 # =============================================================================
 # install modules for 32bit apps
 RUN  yum -y install libstdc++.i686 \
+  && yum -y install 'libstdc++.so.5' \
   && yum -y install zlib.i686
 
 # =============================================================================
